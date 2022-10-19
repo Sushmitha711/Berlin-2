@@ -8,7 +8,9 @@ import "./App.css";
 let App=()=>{
 
     return <Router>
+        <div className='App'>
         <Navbar/>
+        </div> 
         <Routes>
             <Route exact path="/" element={<Bikes/>}/>
                     
