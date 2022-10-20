@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import BikeList from '../BikeList/BikeList';
 import BikeDetails from "../BikeDetails/BikeDetails";
-import CustomPagination from '../../Pagination/CustomPagination';
+// import CustomPagination from '../../Pagination/CustomPagination';
 import "./Bike.css";
 
 
@@ -49,7 +49,7 @@ const Bikes= () => {
                         }
                     </div>
                 </div>
-                <CustomPagination setPage={setPage}/>  
+                {/* <CustomPagination setPage={setPage}/>   */}
             </div>
      
     );
