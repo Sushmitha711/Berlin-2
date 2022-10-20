@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import BikeList from '../BikeList/BikeList';
 import BikeDetails from "../BikeDetails/BikeDetails";
-// import CustomPagination from '../../Pagination/CustomPagination';
+import CustomPagination from '../../Pagination/CustomPagination';
 import "./Bike.css";
 
 
@@ -49,7 +49,9 @@ const Bikes= () => {
                         }
                     </div>
                 </div>
-                {/* <CustomPagination setPage={setPage}/>   */}
+                <p>1. When your going to change the page please refresh the page using refresh button.</p>
+                <p>2. When your going to search the item in the search label and also search it in another page means do refresh and once again click on search button.</p>
+                <CustomPagination setPage={setPage}/>  
             </div>
      
     );

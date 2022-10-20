@@ -49,7 +49,7 @@ const BikeList = (props) => {
             <div className="col-md-6">
 
             <input type="text" 
-            placeholder='Search...'
+            placeholder='Search By title wise...'
             className='form-control' 
             onChange={getData}
             value={searchName}/>
