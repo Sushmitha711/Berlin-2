@@ -30,18 +30,18 @@ const Bikes= () => {
 
     return (
         <div>
-            
+            <br/><br/>
             {/* <pre>{JSON.stringify(data)}</pre> */}
-            
+            <CustomPagination setPage={setPage}/>  
                 <div className='row'>
-                    <div className="col-md-8">
+                    <div className="col-md-6">
                         {
                             Object.keys(data).length>0?<>
                             {<BikeList Udata={data} selectedProfile={selectProfiles} />}
-                            </>:<p className='Span'><em>Data is loading..</em></p>
+                            </>:<p className='Span'><em>Loading...</em></p>
                         }
                     </div>
-                    <div className="col-md-3">
+                    <div className="col-md-6">
                         {
                             Object.keys(profile).length>0?<>
                             {<BikeDetails Profile={profile}/>}
@@ -49,9 +49,6 @@ const Bikes= () => {
                         }
                     </div>
                 </div>
-                <p>1. When your going to change the page please refresh the page using refresh button.</p>
-                <p>2. When your going to search the item in the search label and also search it in another page means do refresh and once again click on search button.</p>
-                <CustomPagination setPage={setPage}/>  
             </div>
      
     );

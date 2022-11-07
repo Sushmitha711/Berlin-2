@@ -1,15 +1,15 @@
 import React from 'react';
-import { unavailableLandscape } from '../../Config/config';
+import { noPicture } from '../../Config/config';
 
 const BikeDetails = (props) => {
     return<>
-    {/* <pre>{JSON.stringify(props)}</pre> */}
-    <h3 className='alert alert-danger text-center mt-5'>BikeDetails</h3>
+    <div className='details'>
+    <h3 className='alert bg-primary text-white text-center mt-5'>BikeDetails</h3>
     <div className="card">
         <div className="card-header">
-            <img src={props.Profile.profile.large_img?props.Profile.profile.large_img:unavailableLandscape} width="250" height="210"/>
+            <img src={props.Profile.profile.large_img?props.Profile.profile.large_img:noPicture} width="590" height="350"/>
         </div>
-        <div className="card-body alert alert-info">
+        <div className="card-body alert alert-dark">
             <h5>Title:{props.Profile.profile.title}</h5>
             <p>Description : {props.Profile.profile.description}</p>
             <p>Stolen Location : {props.Profile.profile.stolen_location}</p>
@@ -18,7 +18,7 @@ const BikeDetails = (props) => {
             <p>Year: {props.Profile.profile.year}</p>
         </div>
     </div>
-    
+    </div>
     </>
 
   

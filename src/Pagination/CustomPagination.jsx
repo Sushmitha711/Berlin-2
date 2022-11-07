@@ -18,6 +18,7 @@ const CustomPagination = ({setPage, numberOfPages=4854}) => {
           display:"flex",
           justifyContent:"center",
           marginTop:"10",
+          color:"white",
         }}>
            <Pagination count={numberOfPages} onChange={(e)=>handlePageChange(e.target.textContent)} color="primary"/>
         </div>
